@@ -12,6 +12,6 @@ mac:
   target:
     - dmg
   artifactName: ${productName}-${version}-${arch}.${ext}
-  entitlementsInherit: build/entitlements.mac.plist
+  identity: null
 dmg:
   artifactName: ${productName}-${version}.${ext}
