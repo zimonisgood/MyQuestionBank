@@ -10,6 +10,7 @@ files:
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
 mac:
   target:
+    - zip
     - dmg
   artifactName: ${productName}-${version}-${arch}.${ext}
   identity: null
