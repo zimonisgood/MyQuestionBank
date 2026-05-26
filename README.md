@@ -16,9 +16,15 @@
 
 ### macOS
 
-1. 在 [Releases](../../releases) 页面下载最新的 `.dmg` 文件
-2. 打开 `.dmg` 文件，将应用拖入 Applications 文件夹
-3. 首次打开时如遇安全提示，前往「系统设置 > 隐私与安全性」点击「仍要打开」
+1. 在 [Releases](../../releases) 页面下载最新的 `.zip` 文件
+2. 下载完成后，打开终端运行以下命令解除 macOS 安全限制：
+   ```bash
+   xattr -cr ~/Downloads/题库助手-0.1.0-arm64.zip
+   ```
+3. 解压 zip，将 `题库助手.app` 拖入 Applications 文件夹
+4. 首次打开：右键点击应用 → 选「打开」→ 弹窗中点「打开」
+
+> 因为应用未经 Apple 签名，macOS 会阻止直接运行。上述步骤仅需首次安装时操作一次。
 
 ## 开发
 
